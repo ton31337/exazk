@@ -1,6 +1,9 @@
-### Setup
+## Requirements
+* Zookeeper
+* ExaBGP
+* Ruby
 
-## /etc/exabgp/exabgp.conf example
+## Configuration example
 ```
 neighbor 10.0.0.1 {
     router-id 10.0.0.2;
