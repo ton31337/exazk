@@ -2,6 +2,7 @@
 * Zookeeper
 * ExaBGP
 * Ruby
+* zk rubygem
 
 ## Configuration example
 ```
