@@ -1,3 +1,9 @@
+## Workflow
+* ExaBGP forks new process (exazk.rb);
+* exazk.rb is trying to acquire mutex on ZK:
+  * on success - announce routes and write some information to ZK about master node;
+  * on failure - withdraw routes and spin around trying to acquire mutex once again.
+
 ## Requirements
 * Zookeeper
 * ExaBGP
