@@ -4,6 +4,8 @@
   * on success - announce routes and write some information to ZK about master node;
   * on failure - withdraw routes and spin around trying to acquire mutex once again.
 
+![](http://donatas.net/exazk.png)
+
 ## Requirements
 * Zookeeper
 * ExaBGP
