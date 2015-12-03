@@ -12,6 +12,9 @@
 * Ruby
 * zk rubygem
 
+## Recommendations
+* set `minSessionTimeout` or `tickTime` (zookeeper) as low as you can, to have faster convergence.
+
 ## Configuration example
 ```
 neighbor 10.0.0.1 {
