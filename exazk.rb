@@ -12,7 +12,7 @@ class ExaZK
       hostname: Socket.gethostname,
       data: data
     }.to_json
-    @zk = ZK.new(@zk_string, :timeout => 5)
+    @zk = ZK.new(@zk_string)
   end
 
   def send_update(route)
