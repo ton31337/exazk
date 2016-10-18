@@ -12,6 +12,9 @@
 * Ruby
 * zk rubygem
 
+## Install
+* gem install exazk
+
 ## Recommendations
 * set `minSessionTimeout` or `tickTime` (zookeeper) as low as you can, to have faster convergence.
 
