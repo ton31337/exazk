@@ -1,4 +1,3 @@
-#!/usr/local/rvm/rubies/ruby-2.3.0/bin/ruby
 require 'zk'
 require 'socket'
 require 'json'
@@ -55,12 +54,4 @@ class ExaZK
       send_update(route)
     end if mutex_exists?
   end
-end
-
-routes = [ "%s route 10.0.0.10/32 next-hop 1.1.1.1\n" ]
-
-exazk = ExaZK.new('/mutex', 'localhost:2181/exazk', routes, 'mysql cluster #2')
-while true
-  exazk.main_loop
-  sleep 5
 end
