@@ -33,3 +33,16 @@ neighbor 10.0.0.1 {
 }
 ```
 
+## Usage
+```
+require 'exazk'
+
+zk_string = 'localhost:2181/exazk'
+routes = [ "%s route 10.0.0.10/32 next-hop 1.1.1.1\n" ]
+
+exazk = ExaZK.new('/mutex', zk_string, routes, 'mysql cluster #2')
+while true
+  exazk.main_loop
+  sleep 5
+end
+```
