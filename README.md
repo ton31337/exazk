@@ -9,8 +9,7 @@
 ## Requirements
 * Zookeeper
 * ExaBGP
-* Ruby
-* zk rubygem
+* Ruby >= 2
 
 ## Install
 * gem install exazk
